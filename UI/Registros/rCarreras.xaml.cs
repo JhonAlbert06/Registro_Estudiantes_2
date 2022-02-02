@@ -37,13 +37,7 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
                 CarreraTextBox.Focus();
                 MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else if (string.IsNullOrWhiteSpace(null))
-            {
-                esValido = false;
-                IDTextBox.Focus();
-                MessageBox.Show("Debe indicar el ID!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
+           
             return esValido;
         }
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
