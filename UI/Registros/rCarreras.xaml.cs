@@ -34,14 +34,14 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             if (string.IsNullOrWhiteSpace(Carrera.Nombre))
             {
                 esValido = false;
-                //CarreraTextBox.Focus();
-                MessageBox.Show("Debe indicar el titulo!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                CarreraTextBox.Focus();
+                MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else if (string.IsNullOrWhiteSpace(null))
             {
                 esValido = false;
-               //GrupoTextBox.Focus();
-                MessageBox.Show("Debe indicar el grupo!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                IDTextBox.Focus();
+                MessageBox.Show("Debe indicar el ID!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
             return esValido;
