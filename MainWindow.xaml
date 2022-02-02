@@ -21,6 +21,7 @@
                     <MenuItem Header="Carreras" x:Name="cCarreras"  />  <!-- Click ="ConsultaCarrerasMenuItem_Click" -->
                     <MenuItem Header="Estudiantes" x:Name="cEstudiantes"  />  <!-- Click ="ConsultaEstudiantesMenuItem_Click" -->
                 </MenuItem>
+                
             </Menu>
 
         </StackPanel>
