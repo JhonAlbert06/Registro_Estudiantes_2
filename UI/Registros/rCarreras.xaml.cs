@@ -6,6 +6,13 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
 {
     public partial class rCarreras : Window
     {
-        
+        private Carreras Carrera = new Carreras();
+
+        public rCarreras()
+        {
+            InitializeComponent();
+
+            this.DataContext = Carrera;
+        }
     }
 }
