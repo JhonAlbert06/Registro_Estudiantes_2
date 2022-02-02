@@ -32,14 +32,16 @@ namespace Tarea3_Registro_Estudiantes
             var rCarreras = new rCarreras();
             rCarreras.Show();
         }
-        /*
+
         private void RegistroEstudiantesMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            /*
             var rEstudiantes = new rEstudiantes();
             rCarreras.Show();
+            */
         }
 
-
+        /*
         private void ConsultaLibrosMenuItem_Click(object sender, RoutedEventArgs e)
         {
              var cLibros = new cLibros();
