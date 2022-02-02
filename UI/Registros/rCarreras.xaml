@@ -16,7 +16,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBox Text="{Binding LibroId}" Width="50" />
-                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> <!-- Click="BuscarButton_Click" -->
+                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
                 </StackPanel>
             </StackPanel>
 
@@ -35,9 +35,9 @@
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="🆕 Nuevo" Click="NuevoButton_Click" /> <!--  Click="NuevoButton_Click" -->
-                <Button Content="✔ Guardar" Click="GuardarButton_Click" /> <!-- Click="GuardarButton_Click" -->
-                <Button Content="⛔ Eliminar" Click="EliminarButton_Click" /> <!-- Click="EliminarButton_Click" -->
+                <Button Content="🆕 Nuevo" Click="NuevoButton_Click" /> 
+                <Button Content="✔ Guardar" Click="GuardarButton_Click" /> 
+                <Button Content="⛔ Eliminar" Click="EliminarButton_Click" /> 
             </StackPanel>
 
         </StackPanel>
