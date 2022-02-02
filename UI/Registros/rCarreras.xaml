@@ -1,21 +1,21 @@
-<Window x:Class="Clase2.UI.Registros.rCarreras"
+<Window x:Class="Tarea3_Registro_Estudiantes.UI.Registros.rCarreras"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Clase2.UI.Registros"
+        xmlns:local="clr-namespace:Tarea3_Registro_Estudiantes.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Carreras" Height="200" Width="200">
+        Title="Registro de Carreras" Height="300" Width="400">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
            
            <!-- CarreraId -->
-            <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Right">
                 <Label Content="Id:"/>
 
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding LibroId}" Width="100" />
+                    <TextBox Text="{Binding LibroId}" Width="50" />
                     <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> <!-- Click="BuscarButton_Click" -->
                 </StackPanel>
             </StackPanel>
