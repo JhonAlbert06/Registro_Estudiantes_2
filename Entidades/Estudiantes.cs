@@ -13,7 +13,6 @@ namespace Tarea3_Registro_Estudiantes.Entidades
         public int CarreraID { get; set; }
         public bool Activo { get; set; }
         
-        /*
         Estudiantes (int estudiantesid, string nombres, string email, int carrera, bool activo)
         {
             this.EstudiantesID = estudiantesid;
@@ -22,7 +21,6 @@ namespace Tarea3_Registro_Estudiantes.Entidades
             this.CarreraID = carrera;
             this.Activo = activo;
         }
-        */
 
     }
 }
