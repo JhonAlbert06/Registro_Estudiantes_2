@@ -23,11 +23,11 @@
 
            <!-- ID -->
             <Label Content="ID:"/>
-            <TextBox x:Name="IDTextBox" Text="{Binding Titulo}" Width="200" />
+            <TextBox x:Name="IDTextBox" Text="{Binding ID}" Width="200" />
 
            <!-- Carrera -->
-            <Label Content="Carrera:"/>
-            <TextBox  x:Name="CarreraTextBox" Text="{Binding Grupo}" Width="200" />
+            <Label Content="Nombre:"/>
+            <TextBox  x:Name="CarreraTextBox" Text="{Binding Carrera}" Width="200" />
 
             <!-- BARRA DE BOTONES -->
             <StackPanel 
