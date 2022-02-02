@@ -13,12 +13,12 @@
             <Menu>
 
                 <MenuItem Header="Registros" >
-                    <MenuItem Header="Carreras" x:Name="rCarreras"  /> <!-- Click ="RegistroCarrerasMenuItem_Click" -->
-                    <MenuItem Header="Estudiantes" x:Name="rEstudiantes"  /> <!-- Click ="RegistroEstudiantesMenuItem_Click" -->
+                    <MenuItem Header="Carreras" x:Name="rCarreras" Click ="RegistroCarrerasMenuItem_Click" /> <!-- Click ="RegistroCarrerasMenuItem_Click" -->
+                    <MenuItem Header="Estudiantes" x:Name="rEstudiantes" Click ="RegistroEstudiantesMenuItem_Click" /> <!-- Click ="RegistroEstudiantesMenuItem_Click" -->
                 </MenuItem>
 
                 <MenuItem Header="Consultas" >
-                    <MenuItem Header="Carreras" x:Name="cCarreras"  />  <!-- Click ="ConsultaCarrerasMenuItem_Click" -->
+                    <MenuItem Header="Carreras" x:Name="cCarreras" />  <!-- Click ="ConsultaCarrerasMenuItem_Click" -->
                     <MenuItem Header="Estudiantes" x:Name="cEstudiantes"  />  <!-- Click ="ConsultaEstudiantesMenuItem_Click" -->
                 </MenuItem>
                 
