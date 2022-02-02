@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Tarea3_Registro_Estudiantes.UI.Registros;
+
 namespace Tarea3_Registro_Estudiantes
 {
     /// <summary>
@@ -24,5 +26,25 @@ namespace Tarea3_Registro_Estudiantes
         {
             InitializeComponent();
         }
+
+        private void RegistroCarrerasMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var rCarreras = new rCarreras();
+            rCarreras.Show();
+        }
+        /*
+        private void RegistroEstudiantesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var rEstudiantes = new rEstudiantes();
+            rCarreras.Show();
+        }
+
+
+        private void ConsultaLibrosMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+             var cLibros = new cLibros();
+            cLibros.Show();
+        }
+        */
     }
 }
