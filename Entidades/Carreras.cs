@@ -10,13 +10,11 @@ namespace Tarea3_Registro_Estudiantes.Entidades
         public int CarreraID { get; set; }
         public string? Nombre { get; set; }
         
-        /*
         Carreras (int carreraid, string nombre)
         {
             this.CarreraID = carreraid;
             this.Nombre = nombre;
         }
-        */
         
     }
 }
