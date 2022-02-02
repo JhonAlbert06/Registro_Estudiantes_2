@@ -32,7 +32,7 @@
             <Label Content="Carrera:"/>
             <ComboBox>
                 <ComboBoxItem>
-                
+                </ComboBoxItem>
             </ComboBox>
             <TextBox x:Name="EmailTextBox" Text="{Binding Email
         
