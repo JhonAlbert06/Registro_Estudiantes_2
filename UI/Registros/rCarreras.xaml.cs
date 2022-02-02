@@ -14,5 +14,7 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
 
             this.DataContext = Carrera;
         }
+
+        
     }
 }
