@@ -30,8 +30,11 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
         private bool Validar()
         {
             bool esValido = true;
-
-            if (string.IsNullOrWhiteSpace(Carrera.Nombre))
+            /*
+            IDTextBox
+            CarreraTextBox
+            */
+            if ()
             {
                 esValido = false;
                 
