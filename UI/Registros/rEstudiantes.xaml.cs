@@ -31,9 +31,11 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
         {
             bool esValido = true;
 
-            if (string.IsNullOrWhiteSpace(Estudiantes.Nombre))
+            if ()
             {
+                esValido = false;
                 
+                MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
            
             return esValido;
