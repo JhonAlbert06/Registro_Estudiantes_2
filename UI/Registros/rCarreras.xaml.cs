@@ -34,7 +34,7 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             if (string.IsNullOrWhiteSpace(Carrera.Nombre))
             {
                 esValido = false;
-                CarreraTextBox.Focus();
+                
                 MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
            
