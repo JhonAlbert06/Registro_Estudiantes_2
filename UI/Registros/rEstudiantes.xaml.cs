@@ -31,12 +31,18 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
         {
             bool esValido = true;
 
-            if ()
-            {
-                esValido = false;
+            if (!(ValidarTexto(NombreTextBox.Text))){
                 
-                MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                esValido = false;
+                MessageBox.Show("Favor verificar si el Nombre esta colocado correctamente", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
+            if (!(ValidarEmail(EmailTextBox.Text))){
+
+                esValido = false;
+                MessageBox.Show("Favor verificar si el Email esta colocado correctamente", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
            
             return esValido;
         }
@@ -88,6 +94,51 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             }
             else
                 MessageBox.Show("No se pudo eliminar el libro", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        private bool ValidarEmail(string email){
+            
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+
+        }
+
+        private bool ValidarTexto(string texto){
+
+            bool auxiliar = true;
+
+            if( texto != " " ||    
+                texto.Contains('!') ||
+                texto.Contains('@') ||
+                texto.Contains('#') ||
+                texto.Contains('$') ||
+                texto.Contains('%') ||
+                texto.Contains('^') ||
+                texto.Contains('&') ||
+                texto.Contains('*') ||
+                texto.Contains('(') ||
+                texto.Contains(')') ||
+                texto.Contains('1') ||
+                texto.Contains('2') ||
+                texto.Contains('3') ||
+                texto.Contains('4') ||
+                texto.Contains('5') ||
+                texto.Contains('6') ||
+                texto.Contains('7') ||
+                texto.Contains('8') ||
+                texto.Contains('9'))
+                {
+                    auxiliar = false;
+                }
+
+                return auxiliar;
         }
     }
 }
