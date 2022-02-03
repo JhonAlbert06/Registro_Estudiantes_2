@@ -34,7 +34,6 @@
                 <ComboBoxItem>
                 </ComboBoxItem>
             </ComboBox>
-            <TextBox x:Name="EmailTextBox" Text="{Binding Email}" Width="200" />
         
             <!-- BARRA DE BOTONES -->
             <StackPanel 
