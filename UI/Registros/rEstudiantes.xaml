@@ -23,6 +23,10 @@
             <!-- Nombre -->
             <Label Content="Nombre:"/>
             <TextBox x:Name="NombreTextBox" Text="{Binding Nombre}" Width="200" />
+            
+            <!-- ID -->
+            <Label Content="ID:"/>
+            <TextBox x:Name="IDTextBox" Text="{Binding Nombre}" Width="200" />
 
             <!-- Email -->
             <Label Content="Email:"/>
