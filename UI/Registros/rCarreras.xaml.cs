@@ -33,14 +33,14 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             /*
             IDTextBox
             CarreraTextBox
-            */
+            
             if ()
             {
                 esValido = false;
                 
                 MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-           
+           */
             return esValido;
         }
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
