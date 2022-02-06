@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea3_Registro_Estudiantes.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Carreras" Height="300" Width="400">
+        Title="Registro de Carreras" Height="200" Width="400">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
@@ -15,19 +15,14 @@
                 <Label Content="Id:"/>
 
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding LibroId}" Width="50" />
-                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
+                    <TextBox Text="{Binding Id}" Width="50" />
+                    <Button Content="🔎 Buscar " Click="BuscarButton_Click" Margin="5,0,0,0" /> 
                 </StackPanel>
             </StackPanel>
 
-
-           <!-- ID -->
-            <Label Content="ID:"/>
-            <TextBox x:Name="IDTextBox" Text="{Binding ID}" Width="200" />
-
            <!-- Carrera -->
             <Label Content="Nombre:"/>
-            <TextBox  x:Name="CarreraTextBox" Text="{Binding Carrera}" Width="200" />
+            <TextBox  x:Name="CarreraTextBox" Text="{Binding Nombre}" Width="200" />
 
             <!-- BARRA DE BOTONES -->
             <StackPanel 
@@ -35,9 +30,9 @@
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="🆕 Nuevo" Click="NuevoButton_Click" /> 
-                <Button Content="✔ Guardar" Click="GuardarButton_Click" /> 
-                <Button Content="⛔ Eliminar" Click="EliminarButton_Click" /> 
+                <Button Content="🆕 Nuevo " Click="NuevoButton_Click" Margin="10,0,0,0" /> 
+                <Button Content="✔ Guardar " Click="GuardarButton_Click" Margin="10,0,0,0" /> 
+                <Button Content="⛔ Eliminar " Click="EliminarButton_Click" Margin="10,0,0,0" /> 
             </StackPanel>
 
         </StackPanel>
