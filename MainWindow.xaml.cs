@@ -35,10 +35,10 @@ namespace Tarea3_Registro_Estudiantes
 
         private void RegistroEstudiantesMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            /*
+            
             var rEstudiantes = new rEstudiantes();
-            rCarreras.Show();
-            */
+            rEstudiantes.Show();
+            
         }
 
         /*
