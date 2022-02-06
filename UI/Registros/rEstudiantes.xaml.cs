@@ -31,19 +31,22 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
         {
             bool esValido = true;
 
-            if (!(ValidarTexto(NombreTextBox.Text))){
-                
+            if (string.IsNullOrWhiteSpace(Estudiantes.Nombres))
+            {
                 esValido = false;
-                MessageBox.Show("Favor verificar si el Nombre esta colocado correctamente", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                NombreTextBox.Focus();
+                MessageBox.Show("Debe indicar el nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+            
+            } 
+            else if (string.IsNullOrWhiteSpace(Estudiantes.Email))
+            {
+
+                esValido = false;
+                EmailTextBox.Focus();
+                MessageBox.Show("Debe indicar el Email!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+            
             }
 
-            if (!(ValidarEmail(EmailTextBox.Text))){
-
-                esValido = false;
-                MessageBox.Show("Favor verificar si el Email esta colocado correctamente", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
-           
             return esValido;
         }
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
