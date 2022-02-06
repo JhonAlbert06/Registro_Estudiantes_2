@@ -30,17 +30,14 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
         private bool Validar()
         {
             bool esValido = true;
-            /*
-            IDTextBox
-            CarreraTextBox
-            
-            if ()
+
+            if (string.IsNullOrWhiteSpace(Carrera.Nombre))
             {
                 esValido = false;
-                
-                MessageBox.Show("Debe indicar el Nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                CarreraTextBox.Focus();
+                MessageBox.Show("Debe indicar el nombre!", "Validación", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-           */
+
             return esValido;
         }
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
