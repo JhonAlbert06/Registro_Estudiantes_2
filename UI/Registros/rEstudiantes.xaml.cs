@@ -61,7 +61,7 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             else
             {
                 Limpiar();
-                MessageBox.Show("No se encontro el libro!", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No se encontro el estudiante!", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
         }
@@ -82,9 +82,9 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             paso = EstudiantesBLL.Guardar(Estudiantes);
 
             if (paso)
-                MessageBox.Show("Libro guardado con éxito", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("El estudiante guardado con éxito", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
             else
-                MessageBox.Show("No se pudo guardar el libro", "Fallo", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("No se pudo guardar el estudiante", "Fallo", MessageBoxButton.OK, MessageBoxImage.Information);
 
         }
 
@@ -93,10 +93,10 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
             if (EstudiantesBLL.Eliminar(Estudiantes.EstudiantesID))
             {
                 Limpiar();
-                MessageBox.Show("Libro eliminado con éxito", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("El estudiante eliminado con éxito", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
-                MessageBox.Show("No se pudo eliminar el libro", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No se pudo eliminar el estudiante", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private bool ValidarEmail(string email){
@@ -141,7 +141,8 @@ namespace Tarea3_Registro_Estudiantes.UI.Registros
                     auxiliar = false;
                 }
 
-                return auxiliar;
+            return auxiliar;
         }
+        
     }
 }
