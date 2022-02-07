@@ -12,6 +12,7 @@
            
            <!-- CarreraId -->
             <StackPanel Orientation="Vertical" HorizontalAlignment="Right">
+                
                 <Label Content="Id:"/>
 
                 <StackPanel Orientation="Horizontal">
@@ -35,10 +36,9 @@
 
             <!-- Carrera -->
             <Label Content="Carrera:" />
-            <ComboBox Width="250">
-                <ComboBoxItem>
-                    
-                </ComboBoxItem>
+            <ComboBox Width="250" x:Name="CarreraComboBox" >
+                <ComboBoxItem Content = "Odontologia"/>
+                <ComboBoxItem Content = "Ing. Sistemas y Computacion"/>
             </ComboBox>
         
             <!-- BARRA DE BOTONES -->
