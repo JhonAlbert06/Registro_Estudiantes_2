@@ -37,8 +37,8 @@
             <!-- Carrera -->
             <Label Content="Carrera:" />
             <ComboBox Width="250" x:Name="CarreraComboBox" >
-                <ComboBoxItem Content = "Odontologia"/>
-                <ComboBoxItem Content = "Ing. Sistemas y Computacion"/>
+                <ComboBoxItem Content = "1. Odontologia"/>
+                <ComboBoxItem Content = "2. Ing. Sistemas y Computacion"/>
             </ComboBox>
         
             <!-- BARRA DE BOTONES -->
